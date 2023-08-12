@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/styles.css" />
+    <script defer src="../js/index.js"></script>
+    <title>Interactive Rating Component</title>
+  </head>
+  <body>
+    <section
+      class="h-screen flex flex-col justify-center items-center transition-all"
+    >
+      <div
+        id="home"
+        class="flex flex-col max-w-md mx-auto items-start bg-gray-800 p-8 space-y-6 rounded-3xl"
+      >
+        <div class="rounded-full p-3 bg-gray-700">
+          <img src="/images/icon-star.svg" alt="star-icon" />
+        </div>
+        <div class="flex flex-col space-y-4 w-full">
+          <h2 class="text-2xl font-bold">How did we do?</h2>
+          <p class="text-sm text-gray-400">
+            Please let us know how we did with your support request. All
+            feedback is appreciated to help us improve our offering!
+          </p>
+        </div>
+        <div class="flex space-x-6 items-center justify-center w-full">
+          <button class="rating-numbers">1</button>
+          <button class="rating-numbers">2</button>
+          <button class="rating-numbers">3</button>
+          <button class="rating-numbers">4</button>
+          <button class="rating-numbers">5</button>
+        </div>
+        <div class="w-full">
+          <button
+            id="submitButton"
+            class="uppercase font-bold text-sm p-3 px-20 w-full block rounded-full bg-orange-600 transition-all duration-500 hover:bg-white hover:text-orange-600"
+          >
+            Submit
+          </button>
+        </div>
+      </div>
+
+      <div
+        id="thankYou"
+        class="hidden flex-col max-w-md mx-auto items-center bg-gray-800 p-8 space-y-6 rounded-3xl"
+      >
+        <div>
+          <img src="/images/illustration-thank-you.svg" alt="thank you" />
+        </div>
+        <div
+          id="ratingResult"
+          class="text-sm text-orange-600 text-center py-1 px-6 rounded-full bg-gray-700"
+        >
+          You selected 4 out of 5
+        </div>
+        <div class="flex flex-col items-center space-y-4 w-full">
+          <h2 class="text-2xl font-bold">Thank you!</h2>
+          <p class="text-sm text-gray-400 text-center">
+            We appreciate you taking the time to give a rating. If you ever need
+            more support, don't hesitate to get in touch!
+          </p>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
