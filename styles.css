@@ -2,13 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
-  background-color: #000;
-  color: #fff;
-}
-
 @layer components {
   .rating-numbers {
-    @apply rounded-full w-12 h-12 bg-gray-700 flex justify-center items-center cursor-pointer transition-all duration-500 hover:bg-orange-600 focus:bg-gray-400;
+    @apply rounded-full w-12 h-12 text-gray-light bg-gray-dark cursor-pointer transition-all hover:bg-orange hover:text-white focus:bg-gray-light focus:text-white;
   }
 }
