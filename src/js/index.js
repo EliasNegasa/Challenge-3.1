@@ -21,13 +21,9 @@ const updateUI = () => {
     ratingResult.textContent = `You selected ${selectedValue} out of 5`;
     thankYou.classList.replace('hidden', 'flex');
     home.classList.replace('flex', 'hidden');
+  } else {
+    error.classList.replace('hidden', 'block');
   }
-  displayError();
 };
 
 submitBtn.addEventListener('click', updateUI);
-
-const displayError = () => {
-  error.textContent = 'Please select your rating';
-  error.classList.replace('hidden', 'block');
-};
