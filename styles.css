@@ -4,6 +4,6 @@
 
 @layer components {
   .rating-numbers {
-    @apply rounded-full w-10 h-10 text-gray-light bg-gray-dark cursor-pointer transition-all md:w-12 md:h-12 hover:bg-orange hover:text-white focus:bg-gray-light focus:text-white;
+    @apply rounded-full w-8 h-8 text-gray-light bg-gray-dark cursor-pointer transition-all md:w-12 md:h-12 hover:bg-orange hover:text-white focus:bg-gray-light focus:text-white;
   }
 }
