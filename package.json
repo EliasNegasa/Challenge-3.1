@@ -10,7 +10,7 @@
   "keywords": [],
   "author": "Elias N",
   "license": "ISC",
-  "devDependencies": {
+  "dependencies": {
     "tailwindcss": "^3.3.3"
   }
 }
